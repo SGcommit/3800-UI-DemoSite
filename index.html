@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Word Submission</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Submit a New Sign Language Word</h1>
+        <form id="signLanguageForm" onsubmit="return validateForm()">
+            <label for="word">Word:</label>
+            <input type="text" id="word" name="word" placeholder="required" required>
+
+            <label for="plainDefinition">Plain Definition:</label>
+            <input type="text" id="plainDefinition" name="plainDefinition" placeholder="required" required>
+
+            <label for="pronunciation">Pronunciation:</label>
+            <input type="text" id="pronunciation" name="pronunciation" placeholder="required" required>
+
+            <label for="scientificDefinition">Scientific Definition:</label>
+            <input type="text" id="scientificDefinition" name="scientificDefinition">
+
+            <label for="imageLink">Image Link:</label>
+            <input type="url" id="imageLink" name="imageLink">
+
+            <label for="platform">Platform:</label>
+            <select id="platform" name="platform">
+                <option value="">Select Platform</option>
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+                <option value="Web">Web</option>
+            </select>
+
+            <label for="videoLink">Video Link:</label>
+            <input type="url" id="videoLink" name="videoLink">
+
+            <!-- Button to add custom fields -->
+            <button type="button" onclick="addCustomField()">Add Custom Field</button>
+
+            <div id="formFeedback"></div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

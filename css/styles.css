@@ -1,0 +1,113 @@
+@keyframes flashRed {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.flash-red {
+    animation: flashRed 0.5s linear infinite;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+    width: 100%;
+    max-width: 600px; /* Adjusted for better scaling */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem; /* 32px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+label {
+    font-size: 1rem; /* 16px */
+    margin-bottom: 0.5rem; /* 8px */
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 1rem; /* 16px */
+    margin-bottom: 1.25rem; /* 20px */
+    border-radius: 0.3125rem; /* 5px */
+    border: 1px solid #ccc;
+    font-size: 1rem; /* 16px */
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 1.25rem; /* 20px */
+    background-color: #7ab0ee;
+    color: white;
+    font-size: 1rem; /* 16px */
+    border: none;
+    border-radius: 0.3125rem; /* 5px */
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #096092;
+}
+
+#formFeedback {
+    color: red;
+    font-size: 1rem; /* 16px */
+    text-align: center;
+}
+
+.custom-field {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.remove-field {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0.3125rem; 
+    padding: 0.5rem; 
+    cursor: pointer;
+}
+
+.remove-field:hover {
+    background-color: darkred;
+}
+
+@media (min-width: 600px) {
+    .form-container {
+        padding: 2rem; /* 32px */
+        width: 80%; /* Adjusted to allow the form to resize with the window */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    label, input, select, textarea, button {
+        font-size: 0.9rem; /* 14px */
+    }
+}
