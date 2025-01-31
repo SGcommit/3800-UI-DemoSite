@@ -74,6 +74,11 @@ button:hover {
     background-color: #096092;
 }
 
+/* Space between buttons */
+#addCustomFieldButton {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
 #formFeedback {
     color: red;
     font-size: 1rem; /* 16px */

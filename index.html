@@ -25,19 +25,12 @@
             <label for="imageLink">Image Link:</label>
             <input type="url" id="imageLink" name="imageLink">
 
-            <label for="platform">Platform:</label>
-            <select id="platform" name="platform">
-                <option value="">Select Platform</option>
-                <option value="iOS">iOS</option>
-                <option value="Android">Android</option>
-                <option value="Web">Web</option>
-            </select>
 
             <label for="videoLink">Video Link:</label>
             <input type="url" id="videoLink" name="videoLink">
 
             <!-- Button to add custom fields -->
-            <button type="button" onclick="addCustomField()">Add Custom Field</button>
+            <button id="addCustomFieldButton"type="button" onclick="addCustomField()">Add Custom Field</button>
 
             <div id="formFeedback"></div>
             <button type="submit">Submit</button>
